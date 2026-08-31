@@ -1,0 +1,22 @@
+[project]
+name = "quickstart"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "James Zhao", email = "zhaoyafei0210@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.7.11",
+    "langchain-deepseek>=1.1.0",
+    "python-dotenv>=1.2.3",
+    "tavily-python>=0.8.0",
+]
+
+[project.scripts]
+quickstart = "quickstart:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
