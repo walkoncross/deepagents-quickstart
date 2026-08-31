@@ -17,3 +17,6 @@ outputs/
 
 # macOS
 .DS_Store
+
+# agents
+.claude/

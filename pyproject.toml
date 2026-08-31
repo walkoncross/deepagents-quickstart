@@ -14,6 +14,11 @@ dependencies = [
     "tavily-python>=0.8.0",
 ]
 
+[project.optional-dependencies]
+# 链路追踪二选一:只用 LangSmith 则无需安装额外依赖
+# (langsmith 已随 langchain-core 内置);用 Langfuse 时安装本 extras
+langfuse = ["langfuse>=4.15.1"]
+
 [project.scripts]
 quickstart = "quickstart:main"
 
